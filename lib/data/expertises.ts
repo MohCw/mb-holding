@@ -99,4 +99,35 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     ],
     projets: [IMG.construction4, IMG.etude1, IMG.etude3],
   },
+
+  immobilier: {
+    slug: 'immobilier',
+    numero: '03',
+    titre: 'Immobilier',
+    sousTitre: 'Promotion · Gestion · Investissement',
+    hero: {
+      image: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1776933920/hero_villa_dream_lfymrq.webp',
+      sousTitre: "Promotion · Gestion · Investissement — Des projets immobiliers prestigieux alliant design contemporain et confort absolu.",
+    },
+    points: [
+      "Promotion immobilière de luxe",
+      "Gestion de patrimoine",
+      "Conseil en investissement immobilier",
+      "Développement de projets résidentiels",
+    ],
+    description: [
+      "MB Holding développe des projets immobiliers d'exception, redéfinissant les standards du luxe et du confort en Afrique de l'Ouest. Nous accompagnons nos clients dans l'acquisition, la gestion et l'optimisation de leur patrimoine.",
+      "Chaque projet est pensé pour offrir une expérience de vie unique, mêlant architecture innovante, matériaux nobles et intégration paysagère harmonieuse.",
+    ],
+    stats: [
+      { valeur: 'Premium', label: 'Projets de Luxe' },
+      { valeur: '100%', label: 'Sur-mesure' },
+      { valeur: 'ROI', label: 'Haut rendement' },
+    ],
+    projets: [
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934491/exterieur1_l09jpr.webp',
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934488/exterieur2_ejytk9.webp',
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934485/exterieur3_xatcpb.webp'
+    ],
+  },
 }

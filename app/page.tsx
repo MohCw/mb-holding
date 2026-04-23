@@ -24,7 +24,7 @@ const expertiseCards = [
     border: true,
   },
   {
-    href: '/projets/villa-dream',
+    href: '/expertise/immobilier',
     icon: 'home_work',
     titre: 'Immobilier',
     tag: 'Promotion · Gestion · Investissement',

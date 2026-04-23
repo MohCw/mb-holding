@@ -9,6 +9,7 @@ export const projets: Projet[] = [
     statut: 'En Construction',
     annee: 2024,
     type: 'Luxe Contemporain',
+    expertiseSlug: 'immobilier',
     heroImage: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1776933920/hero_villa_dream_lfymrq.webp',
     gallery: [
       'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934491/exterieur1_l09jpr.webp',

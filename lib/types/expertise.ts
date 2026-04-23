@@ -1,4 +1,4 @@
-export type ExpertiseSlug = 'etude' | 'construction' | 'services'
+export type ExpertiseSlug = 'etude' | 'construction' | 'services' | 'immobilier'
 
 export interface Expertise {
   slug: ExpertiseSlug

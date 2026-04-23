@@ -10,4 +10,5 @@ export interface Projet {
   specs: { label: string; valeur: string }[]
   description: string[]
   planImage: string
+  expertiseSlug?: string
 }

@@ -1,15 +1,18 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import Image from 'next/image'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { StatsGrid } from '@/components/sections/StatsGrid'
 import { CarouselProjets } from '@/components/features/CarouselProjets'
 import { expertises } from '@/lib/data/expertises'
+import { projets as allProjets } from '@/lib/data/projets'
 import type { ExpertiseSlug } from '@/lib/types/expertise'
 
 type Props = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
-  return (['etude', 'construction', 'services'] as ExpertiseSlug[]).map((slug) => ({ slug }))
+  return (['etude', 'construction', 'services', 'immobilier'] as ExpertiseSlug[]).map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -29,6 +32,8 @@ export default async function ExpertisePage({ params }: Props) {
   const { slug } = await params
   const expertise = expertises[slug as ExpertiseSlug]
   if (!expertise) notFound()
+
+  const projetsLies = allProjets.filter(p => p.expertiseSlug === slug)
 
   return (
     <>
@@ -72,7 +77,35 @@ export default async function ExpertisePage({ params }: Props) {
         </div>
       </section>
 
-      <CarouselProjets images={expertise.projets} />
+      {projetsLies.length > 0 ? (
+        <section className="py-24 px-8 md:px-24 bg-[#f0f1f8]">
+          <div className="max-w-screen-2xl mx-auto">
+            <h2 className="text-4xl font-black tracking-tighter uppercase mb-6 font-headline">Projets Liés</h2>
+            <div className="h-1 w-16 bg-primary mb-12" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projetsLies.map(projet => (
+                <Link key={projet.slug} href={`/projets/${projet.slug}`} className="group block h-full">
+                  <div className="relative h-80 w-full overflow-hidden bg-[#e8eaf4]">
+                     <Image 
+                       src={projet.heroImage} 
+                       alt={projet.nom} 
+                       fill 
+                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                       className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                     />
+                  </div>
+                  <div className="p-8 bg-white border border-[#acb3b4]/10 group-hover:bg-primary transition-colors duration-300">
+                    <h3 className="text-2xl font-bold uppercase tracking-tight font-headline group-hover:text-white transition-colors">{projet.nom}</h3>
+                    <p className="text-xs font-bold tracking-widest uppercase text-primary group-hover:text-white/80 mt-2 transition-colors">{projet.type}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <CarouselProjets images={expertise.projets} />
+      )}
     </>
   )
 }
