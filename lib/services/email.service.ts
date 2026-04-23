@@ -2,8 +2,8 @@ import { Resend } from 'resend'
 import type { ContactFormData } from '@/lib/validations/contact.schema'
 import { ContactEmail } from '@/emails/templates/ContactEmail'
 
-const FROM_ADDRESS = 'onboarding@resend.dev'
-const TO_ADDRESS = 'mohamedcamaraj@gmail.com'
+const FROM_ADDRESS = process.env.EMAIL_FROM || 'onboarding@resend.dev';
+const TO_ADDRESS = process.env.EMAIL_TO || 'mohamedcamaraj@gmail.com';
 
 export class EmailService {
   private readonly client: Resend
