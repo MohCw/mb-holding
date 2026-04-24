@@ -52,10 +52,10 @@ export default function AccueilPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'MB Holding — Maître Bâtisseur',
+            name: 'MB Holding — Groupe Maître Bâtisseur',
             description: "Groupe spécialisé dans la construction, l'immobilier et les services connexes.",
-            url: 'https://mbholding.sn',
-            logo: 'https://mbholding.sn/logo.png',
+            url: 'https://groupembholding.com',
+            logo: 'https://groupembholding.com/logo.png',
             telephone: ['+221771285887', '+221787891960'],
             email: 'mbholding221@gmail.com',
             address: {

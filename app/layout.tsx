@@ -21,18 +21,18 @@ const workSans = Work_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'MB Holding — Maître Bâtisseur',
+    default: 'MB Holding — Groupe Maître Bâtisseur',
     template: '%s | MB Holding',
   },
   description:
     "Groupe spécialisé dans la construction, l'immobilier et les services connexes en Afrique de l'Ouest.",
-  metadataBase: new URL('https://mbholding.sn'),
+  metadataBase: new URL('https://groupembholding.com'),
   openGraph: {
     type: 'website',
     locale: 'fr_SN',
-    url: 'https://mbholding.sn',
-    siteName: 'MB Holding',
-    images: [{ url: '/logo.png', width: 400, height: 160, alt: 'MB Holding — Maître Bâtisseur' }],
+    url: 'https://groupembholding.com',
+    siteName: 'Groupe MB Holding',
+    images: [{ url: '/hero-accueil.png', width: 993, height: 460, alt: 'MB Holding — Groupe Maître Bâtisseur' }],
   },
   twitter: {
     card: 'summary_large_image',
