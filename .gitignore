@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cloudflare / opennext build output                                                                                                           
+.open-next/    
+.wrangler/                                                                                                                              
+                                                                                                                                            
+# lighthouse reports                                                                                                                           
+*.report.html
