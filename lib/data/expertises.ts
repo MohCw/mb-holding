@@ -51,9 +51,10 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     },
     points: [
       "Bâtiments résidentiels & tertiaires",
+      "Second œuvre & lots techniques",
       "Bâtiments industriels & métalliques",
       "Travaux de forage & ouvrages spéciaux",
-      "Rénovation & démolition",
+      "Démolition et rénovation",
       "Infrastructure & génie civil",
       "Gestion HSE & sécurité chantier",
     ],

@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <Image src="/logo.png" alt="MB Holding" width={100} height={40} className="h-10 w-auto" />
           <p className="text-[10px] font-body uppercase tracking-widest text-slate-400">
-            Dakar Plateau, Sénégal
+            Dakar, Sénégal
           </p>
           <p className="text-[10px] font-body uppercase tracking-widest text-slate-400">
             +221 77 128 58 87 · +221 787 89 19 60
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
 
         <p className="font-body text-[10px] uppercase tracking-widest text-slate-400 text-center md:text-right">
-          © {new Date().getFullYear()} MB Holding (Maître Bâtisseur).<br className="hidden md:block" /> Tous droits réservés.
+          © {new Date().getFullYear()} Groupe MB Holding (Maître Bâtisseur).<br className="hidden md:block" /> Tous droits réservés.
         </p>
 
       </div>
