@@ -8,9 +8,9 @@ directory = ".open-next/assets"
 binding = "ASSETS"
 
 [[routes]]
-pattern = "groupembholding.com/*"
+pattern = "groupembholding.com"
 custom_domain = true
 
 [[routes]]
-pattern = "www.groupembholding.com/*"
+pattern = "www.groupembholding.com"
 custom_domain = true
