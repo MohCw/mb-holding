@@ -4,7 +4,7 @@ export function EmailHeader() {
   return (
     <Section style={styles.wrapper}>
       <Text style={styles.logo}>MB HOLDING</Text>
-      <Text style={styles.tagline}>MAÎTRE BÂTISSEUR · DAKAR, SÉNÉGAL</Text>
+      <Text style={styles.tagline}>GROUPE MAÎTRE BÂTISSEUR · DAKAR, SÉNÉGAL</Text>
     </Section>
   )
 }
