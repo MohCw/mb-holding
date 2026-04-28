@@ -7,19 +7,19 @@ export const projets: Projet[] = [
     nom: 'Villa DREAM',
     lieu: 'Saly, Sénégal',
     statut: 'En Construction',
-    annee: 2024,
+    annee: 2026,
     type: 'Luxe Contemporain',
     expertiseSlug: 'immobilier',
     heroImage: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1776933920/hero_villa_dream_lfymrq.webp',
     gallery: [
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934491/exterieur1_l09jpr.webp',
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934488/exterieur2_ejytk9.webp',
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934485/exterieur3_xatcpb.webp'
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1777409375/gallery1_w1nceq.jpg',
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1777409378/gallery2_mw0u6c.jpg',
+      'https://res.cloudinary.com/dbjjlklld/image/upload/v1777409378/gallery3_zbkeuz.jpg'
     ],
     specs: [
-      { label: 'Surface terrain', valeur: '1 200 m²' },
-      { label: 'Surface bâtie', valeur: '450 m²' },
-      { label: 'Volumes', valeur: '5 Suites parentales · Séjour triple hauteur' },
+      { label: 'Surface terrain', valeur: '316 m²' },
+      { label: 'Surface bâtie', valeur: '194 m²' },
+      { label: 'Volumes', valeur: 'Des pieces bien pensé au besoin' },
       { label: 'Équipements', valeur: 'Domotique intégrée · Solaire hybride' },
       { label: 'Piscine', valeur: 'Miroir à débordement 15m × 4m' },
       { label: 'Structure', valeur: 'Béton armé · Pierre locale · Verre haute perf.' },

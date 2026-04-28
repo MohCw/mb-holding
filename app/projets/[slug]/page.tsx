@@ -109,7 +109,7 @@ export default async function ProjetPage({ params }: Props) {
               src={projet.gallery[0]}
               alt={`${projet.nom} — vue principale`}
               fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-contain transition-all duration-700"
               sizes="60vw"
             />
           </div>
@@ -120,7 +120,7 @@ export default async function ProjetPage({ params }: Props) {
                   src={img}
                   alt={`${projet.nom} — détail ${i + 2}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="40vw"
                 />
               </div>
@@ -152,7 +152,7 @@ export default async function ProjetPage({ params }: Props) {
                 alt={`Plan de masse — ${projet.nom}`}
                 width={600}
                 height={400}
-                className="w-full opacity-60 mix-blend-multiply"
+                className="w-full"
               />
             </div>
             <div className="space-y-8">
@@ -163,16 +163,16 @@ export default async function ProjetPage({ params }: Props) {
                 OPTIMISATION SPATIALE
               </h2>
               <p className="font-body text-[#44475f] leading-relaxed">
-                Le plan s&apos;articule autour d&apos;un patio central, véritable poumon thermique de la maison. Cette configuration permet une circulation fluide entre les espaces de réception et les zones d&apos;intimité.
+                Chaque détail a été soigneusement étudié afin de répondre aux exigences d’un art de vivre moderne, alliant intimité, détente et qualité de vie, dans un environnement paisible et sécurisé.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center gap-4">
                   <span className="material-symbols-outlined text-primary" aria-hidden="true">architecture</span>
-                  <span className="text-xs uppercase font-bold tracking-widest">Étude de Sol Certifiée</span>
+                  <span className="text-xs uppercase font-bold tracking-widest">Étude technique Certifiée</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="material-symbols-outlined text-primary" aria-hidden="true">precision_manufacturing</span>
-                  <span className="text-xs uppercase font-bold tracking-widest">Structure Béton Armé</span>
+                  <span className="text-xs uppercase font-bold tracking-widest">Structure</span>
                 </li>
               </ul>
             </div>

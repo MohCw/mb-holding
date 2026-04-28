@@ -2,11 +2,24 @@ import type { Expertise, ExpertiseSlug } from '@/lib/types/expertise'
 
 // Image URLs — à remplacer par les URLs Cloudinary en Phase 8
 const IMG = {
-  etude1: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMoTaQpFGPBXDi96A0RLUQtytKoV9xD1HHOUBpalYwX5_Ha8kZVS8z6zPVarTkGp8jKwRUf5ZQlquUEW4a3FTb6TpYCnEwPO9uhrju32wIfJ4tHLjRJlTL-GZ33TjyV7EnKQv-mGfTliWQODyas5E_IrOXov1B1yzszJtiHG04e4yxSn6b4VQfvsBZeEhESeeZZ5GPpWj4IgWWAJBiPlHELmazuhVDDbu53-qQ3kKTLLejxxjfV23pDDG9T7NR8PAB7l_m5bPmGcgI',
-  etude2: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQ7X2RZdwluGKoEmHM8CuN_bSHRG6kVG1tnOvq2cYdPl_EUJrMe8dt2kPfv6z3pVIWs4ivIbRLroJU6e6VdsszU_Xg53VWR2h0d5VlM4vGvHQBdA0B99vDJaYJzz6obaEcTINPBuTO9m8nb67w3eon7sl_xsNoPX8-QDPIzd2HQREou-D5e8MvHW7Tc3B6So1xZkCwofK964itn1eT7Sl4GhvJtO25NKbv1ceUVZO8y4G3EMGU8rcLrQKBZOM-DTFfoUUZIGevYWDF',
-  etude3: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNDIHjevOqCFwF0h1xjhdcknGjeMj7_BRDA2fRc0l_TPs2-TAUEsvMFriEKKKpZzrdIe859mflmtIxOlIkTU4BpmGtqTtgzEa0cv-qJFEZWdywR2sJ2IrkFSCb_CPZTPSylv86_mhrVy8XFGjBieAf1OU2qo8A5u-YbM5eemX-kwsSBkJzLFZQrWqg3x7e3JsWBo_dZck-4EGM5GINEvkKa5gnO88VWpGa9jpRtJkjYWy2S7HGEteQdH5ShmrBOscOTju9OevqrNM3',
-  etude4: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDtUd-BN1E4yi1_h-6DI_f1rRgKx2mjjVvnpedLmTbRmuTSmj__qIhcj1zuPFypAt5VZDA2A9yYzfd5Ix377eJtWKyiYyYTwGbUDtmMkIybW3Ltdv9XqHKeTHrgQULQIDDYDvcsR8f6Oazxor5KNwS4VTIOXSTV0Ed_ugsYM8g7XGe8Os6h4Kv4CA4bynYRhFX-i2Sn3C6trpaXysPDhRbYUTO8VMWsQSW4fKy6eS_hx1I9LmX8yu8orPYLFkhLVt4DAnyrhV6DLjlN',
-  construction4: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDs4V_9oZE2qrjqWeMChUEZYwBHddw80gfsQACfToHAn1mArzD6O5UwQpIWNK2oiz2HG_9KXEiApgJusHX83U-beGh9t9y7aQlnBfYL_OfvWor0wyTGief_T55SjLUGhmpQlgJgvBtJP0J3QG-bFLlEzCd7Y3sHy2U20idJsV2sPl4beuv_LO1AD6ENaDoPYYnZzaP2keqltP5IPXJszb0da2HPu_ZXzVDbOo4_K-_qzce8zDcBNn0rU1xHmI0HRqpDHn9Ui2Np9uUa',
+  etude_bg: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398606/etude_bg_q1lanc.jpg',
+  etude1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398882/etude_1_nj1mua.jpg',
+  etude2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398889/etude_2_iisdpd.jpg',
+  etude3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398890/etude_3_jofrb3.jpg',
+  construction_bg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNDIHjevOqCFwF0h1xjhdcknGjeMj7_BRDA2fRc0l_TPs2-TAUEsvMFriEKKKpZzrdIe859mflmtIxOlIkTU4BpmGtqTtgzEa0cv-qJFEZWdywR2sJ2IrkFSCb_CPZTPSylv86_mhrVy8XFGjBieAf1OU2qo8A5u-YbM5eemX-kwsSBkJzLFZQrWqg3x7e3JsWBo_dZck-4EGM5GINEvkKa5gnO88VWpGa9jpRtJkjYWy2S7HGEteQdH5ShmrBOscOTju9OevqrNM3',
+  construction1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399487/construction1_cc3ii0.jpg',
+  construction2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399498/construction2_nugqs7.jpg',
+  construction3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399490/construction3_cyethq.jpg',
+  construction4: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399457/construction4_jgyw9h.jpg',
+  immobilier_bg: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399617/immobilier_bg_ip2uad.jpg',
+  immobilier1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399682/immobilier1_owt3nd.jpg',
+  immobilier2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399690/immobilier2_cjiuf8.jpg',
+  immobilier3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399677/immobilier3_ff7pum.jpg',
+  service_bg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDs4V_9oZE2qrjqWeMChUEZYwBHddw80gfsQACfToHAn1mArzD6O5UwQpIWNK2oiz2HG_9KXEiApgJusHX83U-beGh9t9y7aQlnBfYL_OfvWor0wyTGief_T55SjLUGhmpQlgJgvBtJP0J3QG-bFLlEzCd7Y3sHy2U20idJsV2sPl4beuv_LO1AD6ENaDoPYYnZzaP2keqltP5IPXJszb0da2HPu_ZXzVDbOo4_K-_qzce8zDcBNn0rU1xHmI0HRqpDHn9Ui2Np9uUa',
+  service1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400186/service1_sa6x0m.jpg',
+  service2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400188/service2_eu9m04.jpg',
+  service3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400187/service3_xajmuz.jpg',
+  service4: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400186/service4_vbsmvx.jpg'
 }
 
 export const expertises: Record<ExpertiseSlug, Expertise> = {
@@ -16,7 +29,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     titre: 'Étude, Conception & Ingénierie',
     sousTitre: 'Accompagnement AMO',
     hero: {
-      image: IMG.etude1,
+      image: IMG.etude_bg,
       sousTitre: "Accompagnement AMO — De l'analyse du besoin jusqu'à la livraison, nous pilotons chaque étape avec précision technique et rigueur méthodologique.",
     },
     points: [
@@ -37,7 +50,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
       { valeur: '100%', label: 'Conformité réglementaire' },
       { valeur: 'AMO', label: 'Accompagnement complet' },
     ],
-    projets: [IMG.etude1, IMG.etude2, IMG.etude3, IMG.etude4],
+    projets: [IMG.etude1, IMG.etude2, IMG.etude3],
   },
 
   construction: {
@@ -47,28 +60,28 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     sousTitre: 'Bâtiment · Industrie · Forages',
     hero: {
       image: IMG.etude3,
-      sousTitre: "Bâtiment · Industrie · Forages — Réalisation d'ouvrages résidentiels, tertiaires et industriels avec une maîtrise complète des procédés de construction modernes.",
+      sousTitre: "Bâtiment · Industrie · Tertiaire — Réalisation de bâtiments résidentiels, tertiaires et industriels, avec une maîtrise complète des procédés de construction modernes.",
     },
     points: [
-      "Bâtiments résidentiels & tertiaires",
+      "Construction résidentielle & tertiaire",
       "Second œuvre & lots techniques",
-      "Bâtiments industriels & métalliques",
-      "Travaux de forage & ouvrages spéciaux",
+      "Construction industrielle & structures métalliques",
+      "Forage & ouvrages spéciaux",
       "Démolition et rénovation",
       "Infrastructure & génie civil",
       "Gestion HSE & sécurité chantier",
     ],
     description: [
-      "MB Holding réalise des ouvrages de construction à forte valeur technique, en s'appuyant sur une organisation rigoureuse et des équipes expérimentées sur le terrain africain.",
-      "Du gros œuvre au second œuvre, nous intervenons sur l'ensemble du cycle de construction. Notre expertise dans les travaux de forage nous permet de répondre à des besoins industriels complexes.",
+      "MB Holding réalise des ouvrages de construction à forte valeur technique, en s'appuyant sur une organisation rigoureuse et des équipes expérimentées sur le terrain.",
+      "Du gros œuvre au second œuvre, nous intervenons sur l’ensemble du cycle de construction. Notre expertise s’étend également à des travaux divers, notamment dans les domaines de l’industrie, du forage et autres activités spécialisées, ce qui nous permet de répondre efficacement à une large variété de besoins.",
       "Chaque projet est piloté avec une attention particulière à la qualité des matériaux, la sécurité des équipes et le respect des délais contractuels.",
     ],
     stats: [
-      { valeur: '20+', label: 'Chantiers réalisés' },
+      { valeur: '10+', label: 'Chantiers réalisés' },
       { valeur: 'BTP', label: 'Toutes typologies' },
       { valeur: 'HSE', label: 'Sécurité garantie' },
     ],
-    projets: [IMG.etude3, IMG.etude1, IMG.etude2, IMG.construction4],
+    projets: [IMG.construction1, IMG.construction2, IMG.construction3, IMG.construction4],
   },
 
   services: {
@@ -77,7 +90,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     titre: 'Services Connexes',
     sousTitre: "Locations d'Engins · Prestations",
     hero: {
-      image: IMG.construction4,
+      image: IMG.service_bg,
       sousTitre: "Locations d'engins · Prestations associées — Un support opérationnel complet pour accompagner la réussite de vos chantiers.",
     },
     points: [
@@ -98,7 +111,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
       { valeur: '24/7', label: 'Support opérationnel' },
       { valeur: 'Flex', label: 'Durées adaptables' },
     ],
-    projets: [IMG.construction4, IMG.etude1, IMG.etude3],
+    projets: [IMG.service1, IMG.service2, IMG.service3, IMG.service4],
   },
 
   immobilier: {
@@ -107,7 +120,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     titre: 'Immobilier',
     sousTitre: 'Promotion · Gestion · Investissement',
     hero: {
-      image: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1776933920/hero_villa_dream_lfymrq.webp',
+      image: IMG.immobilier_bg,
       sousTitre: "Promotion · Gestion · Investissement — Des projets immobiliers prestigieux alliant design contemporain et confort absolu.",
     },
     points: [
@@ -125,10 +138,6 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
       { valeur: '100%', label: 'Sur-mesure' },
       { valeur: 'ROI', label: 'Haut rendement' },
     ],
-    projets: [
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934491/exterieur1_l09jpr.webp',
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934488/exterieur2_ejytk9.webp',
-      'https://res.cloudinary.com/dbjjlklld/image/upload/v1776934485/exterieur3_xatcpb.webp'
-    ],
+    projets: [IMG.immobilier1, IMG.immobilier2, IMG.immobilier3]
   },
 }

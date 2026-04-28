@@ -10,10 +10,12 @@ interface CarouselProjetsProps {
 export function CarouselProjets({ images, titre = 'Projets liés' }: CarouselProjetsProps) {
   return (
     <section className="py-20 bg-[#e8eaf4] overflow-hidden">
-      <div className="max-w-screen-2xl mx-auto px-8 md:px-24 mb-10">
-        <h2 className="text-3xl font-black tracking-tighter uppercase mb-2 font-headline">{titre}</h2>
-        <div className="h-1 w-12 bg-primary" />
-      </div>
+      {titre && (
+        <div className="max-w-screen-2xl mx-auto px-8 md:px-24 mb-10">
+          <h2 className="text-3xl font-black tracking-tighter uppercase mb-2 font-headline">{titre}</h2>
+          <div className="h-1 w-12 bg-primary" />
+        </div>
+      )}
 
       <div
         className="flex gap-4 px-8 md:px-24 pb-4 overflow-x-auto"
@@ -29,7 +31,7 @@ export function CarouselProjets({ images, titre = 'Projets liés' }: CarouselPro
               src={src}
               alt={`Projet ${i + 1}`}
               fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-cover transition-all duration-700"
               sizes="380px"
               unoptimized
             />
