@@ -20,10 +20,10 @@ export function PartenairesGrid({ partenaires }: PartenairesGridProps) {
             {doubled.map((p, i) => (
               <div
                 key={i}
-                className="w-[12.5%] bg-white px-8 py-10 flex items-center justify-center"
+                className="w-[25%] md:w-[12.5%] bg-white px-4 md:px-8 py-6 md:py-10 flex items-center justify-center"
               >
                 {p.logo ? (
-                  <div className="relative w-full h-16">
+                  <div className="relative w-full h-20 md:h-16">
                     <Image
                       src={p.logo}
                       alt={p.nom}

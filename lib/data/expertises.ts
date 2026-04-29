@@ -6,15 +6,16 @@ const IMG = {
   etude1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398882/etude_1_nj1mua.jpg',
   etude2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398889/etude_2_iisdpd.jpg',
   etude3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777398890/etude_3_jofrb3.jpg',
-  construction_bg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNDIHjevOqCFwF0h1xjhdcknGjeMj7_BRDA2fRc0l_TPs2-TAUEsvMFriEKKKpZzrdIe859mflmtIxOlIkTU4BpmGtqTtgzEa0cv-qJFEZWdywR2sJ2IrkFSCb_CPZTPSylv86_mhrVy8XFGjBieAf1OU2qo8A5u-YbM5eemX-kwsSBkJzLFZQrWqg3x7e3JsWBo_dZck-4EGM5GINEvkKa5gnO88VWpGa9jpRtJkjYWy2S7HGEteQdH5ShmrBOscOTju9OevqrNM3',
+  construction_bg: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777485870/construction_bg_kmi483.webp',
   construction1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399487/construction1_cc3ii0.jpg',
   construction2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399498/construction2_nugqs7.jpg',
   construction3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399490/construction3_cyethq.jpg',
   construction4: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399457/construction4_jgyw9h.jpg',
   immobilier_bg: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399617/immobilier_bg_ip2uad.jpg',
-  immobilier1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399682/immobilier1_owt3nd.jpg',
-  immobilier2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399690/immobilier2_cjiuf8.jpg',
-  immobilier3: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777399677/immobilier3_ff7pum.jpg',
+  immobilier1: 'https://res.cloudinary.com/dbjjlklld/image/upload/c_crop,g_north,h_850/v1777399682/immobilier1_owt3nd.jpg',
+  immobilier2: 'https://res.cloudinary.com/dbjjlklld/image/upload/c_crop,g_north,h_850/v1777399690/immobilier2_cjiuf8.jpg',
+  immobilier3: 'https://res.cloudinary.com/dbjjlklld/image/upload/c_crop,g_north,h_850/v1777399677/immobilier3_ff7pum.jpg',
+  immobilier4: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777486496/immobilier4_rqqrgb.jpg',
   service_bg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDs4V_9oZE2qrjqWeMChUEZYwBHddw80gfsQACfToHAn1mArzD6O5UwQpIWNK2oiz2HG_9KXEiApgJusHX83U-beGh9t9y7aQlnBfYL_OfvWor0wyTGief_T55SjLUGhmpQlgJgvBtJP0J3QG-bFLlEzCd7Y3sHy2U20idJsV2sPl4beuv_LO1AD6ENaDoPYYnZzaP2keqltP5IPXJszb0da2HPu_ZXzVDbOo4_K-_qzce8zDcBNn0rU1xHmI0HRqpDHn9Ui2Np9uUa',
   service1: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400186/service1_sa6x0m.jpg',
   service2: 'https://res.cloudinary.com/dbjjlklld/image/upload/v1777400188/service2_eu9m04.jpg',
@@ -59,7 +60,7 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
     titre: 'Construction & Industrie',
     sousTitre: 'Bâtiment · Industrie · Forages',
     hero: {
-      image: IMG.etude3,
+      image: IMG.construction_bg,
       sousTitre: "Bâtiment · Industrie · Tertiaire — Réalisation de bâtiments résidentiels, tertiaires et industriels, avec une maîtrise complète des procédés de construction modernes.",
     },
     points: [
@@ -138,6 +139,6 @@ export const expertises: Record<ExpertiseSlug, Expertise> = {
       { valeur: '100%', label: 'Sur-mesure' },
       { valeur: 'ROI', label: 'Haut rendement' },
     ],
-    projets: [IMG.immobilier1, IMG.immobilier2, IMG.immobilier3]
+    projets: [IMG.immobilier1, IMG.immobilier2, IMG.immobilier3, IMG.immobilier4]
   },
 }

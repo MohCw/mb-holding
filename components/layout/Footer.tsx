@@ -13,7 +13,7 @@ export function Footer() {
             Dakar, Sénégal
           </p>
           <p className="text-[10px] font-body uppercase tracking-widest text-slate-400">
-            +221 77 128 58 87 · +221 787 89 19 60
+            +221 77 128 58 87 · +221 78 789 19 60
           </p>
         </div>
 

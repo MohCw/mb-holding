@@ -19,7 +19,7 @@ export const projets: Projet[] = [
     specs: [
       { label: 'Surface terrain', valeur: '316 m²' },
       { label: 'Surface bâtie', valeur: '194 m²' },
-      { label: 'Volumes', valeur: 'Des pieces bien pensé au besoin' },
+      { label: 'Volumes', valeur: 'Des pieces bien pensées au besoin' },
       { label: 'Équipements', valeur: 'Domotique intégrée · Solaire hybride' },
       { label: 'Piscine', valeur: 'Miroir à débordement 15m × 4m' },
       { label: 'Structure', valeur: 'Béton armé · Pierre locale · Verre haute perf.' },
