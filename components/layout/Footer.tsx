@@ -30,7 +30,7 @@ export function Footer() {
         </div>
 
         <p className="font-body text-[10px] uppercase tracking-widest text-slate-400 text-center md:text-right">
-          © {new Date().getFullYear()} Groupe MB Holding (Maître Bâtisseur).<br className="hidden md:block" /> Tous droits réservés.
+          © {new Date().getFullYear()} Groupe Maître Bâtisseur Holding (MB Holding).<br className="hidden md:block" /> Tous droits réservés.
         </p>
 
       </div>
